@@ -105,6 +105,8 @@ export async function crawlWebsite(startUrl) {
     },
   }, new Configuration({
     persistStorage: false,
+    purgeOnStart: false,
+    memoryMbytes: 512,
   }));
 
   await crawler.run([normalizedStartUrl]);
