@@ -1,0 +1,9 @@
+{
+	"id": "zFrfTw6jQ2Jo70w",
+	"json": "{\"id\":\"zFrfTw6jQ2Jo70w\",\"url\":\"https://health.maryland.gov/mmcp/longtermcare/Pages/Nursing-Home-Services.aspx\",\"loadedUrl\":\"https://health.maryland.gov/mmcp/longtermcare/Pages/Nursing-Home-Services.aspx\",\"uniqueKey\":\"https://health.maryland.gov/mmcp/longtermcare/Pages/Nursing-Home-Services.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-hostname\",\"state\":4}},\"handledAt\":\"2026-02-09T00:27:00.872Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.maryland.gov/mmcp/longtermcare/Pages/Nursing-Home-Services.aspx",
+	"url": "https://health.maryland.gov/mmcp/longtermcare/Pages/Nursing-Home-Services.aspx"
+}

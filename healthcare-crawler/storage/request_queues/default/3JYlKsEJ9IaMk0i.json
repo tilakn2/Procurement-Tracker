@@ -1,0 +1,9 @@
+{
+	"id": "3JYlKsEJ9IaMk0i",
+	"json": "{\"id\":\"3JYlKsEJ9IaMk0i\",\"url\":\"https://health.maryland.gov/phpa/ccdpc/diabetes/Pages/local-classes.aspx\",\"loadedUrl\":\"https://health.maryland.gov/phpa/ccdpc/diabetes/Pages/local-classes.aspx\",\"uniqueKey\":\"https://health.maryland.gov/phpa/ccdpc/diabetes/Pages/local-classes.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-hostname\",\"state\":4}},\"handledAt\":\"2026-02-09T00:27:08.778Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.maryland.gov/phpa/ccdpc/diabetes/Pages/local-classes.aspx",
+	"url": "https://health.maryland.gov/phpa/ccdpc/diabetes/Pages/local-classes.aspx"
+}

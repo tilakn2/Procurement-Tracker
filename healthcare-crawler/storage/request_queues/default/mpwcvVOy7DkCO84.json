@@ -1,0 +1,9 @@
+{
+	"id": "mpwcvVOy7DkCO84",
+	"json": "{\"id\":\"mpwcvVOy7DkCO84\",\"url\":\"https://health.maryland.gov/phpa/wic/Pages/Home.aspx\",\"loadedUrl\":\"https://health.maryland.gov/phpa/wic/Pages/Home.aspx\",\"uniqueKey\":\"https://health.maryland.gov/phpa/wic/Pages/Home.aspx\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"crawlDepth\":1,\"enqueueStrategy\":\"same-hostname\",\"state\":4}},\"handledAt\":\"2026-02-09T00:27:06.554Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://health.maryland.gov/phpa/wic/Pages/Home.aspx",
+	"url": "https://health.maryland.gov/phpa/wic/Pages/Home.aspx"
+}
