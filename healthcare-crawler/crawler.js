@@ -1,4 +1,4 @@
-import { CheerioCrawler } from 'crawlee';
+import { CheerioCrawler, Configuration } from '@crawlee/cheerio';
 
 const MAX_PAGES = 50;
 const MAX_TEXT_CHARS_PER_PAGE = 12000;
@@ -28,8 +28,10 @@ export async function crawlWebsite(startUrl) {
 
   const crawler = new CheerioCrawler({
     maxRequestsPerCrawl: MAX_PAGES,
-    maxConcurrency: 3,
     requestHandlerTimeoutSecs: 60,
+    maxConcurrency: 5,
+    persistCookiesPerSession: false,
+    useSessionPool: false,
     async requestHandler({ request, $, enqueueLinks, log }) {
       const currentUrl = request.loadedUrl || request.url;
 
@@ -101,7 +103,9 @@ export async function crawlWebsite(startUrl) {
     failedRequestHandler({ request, log }) {
       log.warning(`Request failed repeatedly: ${request.url}`);
     },
-  });
+  }, new Configuration({
+    persistStorage: false,
+  }));
 
   await crawler.run([normalizedStartUrl]);
 
