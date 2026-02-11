@@ -1,4 +1,4 @@
-import { PlaywrightCrawler } from 'crawlee';
+import { CheerioCrawler } from 'crawlee';
 
 const MAX_PAGES = 50;
 const MAX_TEXT_CHARS_PER_PAGE = 12000;
@@ -26,27 +26,16 @@ export async function crawlWebsite(startUrl) {
 
   const pages = [];
 
-  const crawler = new PlaywrightCrawler({
+  const crawler = new CheerioCrawler({
     maxRequestsPerCrawl: MAX_PAGES,
     maxConcurrency: 3,
     requestHandlerTimeoutSecs: 60,
-    navigationTimeoutSecs: 45,
-    async requestHandler({ request, page, enqueueLinks, log }) {
+    async requestHandler({ request, $, enqueueLinks, log }) {
       const currentUrl = request.loadedUrl || request.url;
-
-      try {
-        await page.waitForLoadState('domcontentloaded', { timeout: 30000 });
-      } catch {
-        // Continue even if load state times out.
-      }
 
       let text = '';
       try {
-        text = await page.evaluate(() => {
-          const el = document.body;
-          const raw = el ? (el.innerText || '') : '';
-          return raw.replace(/\n{3,}/g, '\n\n').trim();
-        });
+        text = ($('body').text() || '').replace(/\n{3,}/g, '\n\n').trim();
       } catch (err) {
         log.warning(`Failed to extract text for ${currentUrl}: ${err?.message || err}`);
       }
